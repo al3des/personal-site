@@ -10,6 +10,7 @@ import Intro from "@/components/Intro"
 import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import { theme } from "@/components/themes/default"
+import { generate } from "shortid"
 
 let useStyles = makeStyles({
   root: {
@@ -53,10 +54,14 @@ export default function Home({ posts }) {
           content="Alejandro Desalvo | Frontend Developer"
           key="title"
         />
+        <meta
+          property="og:description"
+          content="Frontend Developer. CSS, HTML, JS, React.js"
+        />
         <meta property="og:url" content="https://al3des.dev/" />
         <meta
           property="og:image"
-          content="https://avatars.dicebear.com/api/avataaars/6xkW1Zu5k.svg?top[]=shortHair&facialHairChance=70&clothes[]=shirt&clothes[]=hoodie&mouth[]=smile&mouth[]=twinkle&eyes[]=happy&eyes[]=wink&eyes[]=hearts&eyebrow[]=raised&eyebrow[]=uphttps://avatars.dicebear.com/api/avataaars/AGiD4PNWsa.svg?top[]=shortHair&facialHairChance=70&clothes[]=shirt&clothes[]=hoodie&mouth[]=smile&mouth[]=twinkle&eyes[]=happy&eyes[]=wink&eyes[]=hearts&eyebrow[]=raised&eyebrow[]=up"
+          content={`https://avatars.dicebear.com/api/avataaars/${generate()}.svg?w=500&h=500&top[]=shortHair&facialHairChance=70&clothes[]=shirt&clothes[]=hoodie&mouth[]=smile&mouth[]=twinkle&eyes[]=happy&eyes[]=wink&eyes[]=hearts&eyebrow[]=raised&eyebrow[]=up`}
         />
         <meta property="og:type" content="website" />
       </Head>
