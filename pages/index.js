@@ -61,7 +61,7 @@ export default function Home({ posts }) {
         <meta property="og:url" content="https://al3des.dev/" />
         <meta
           property="og:image"
-          content={`https://avatars.dicebear.com/api/avataaars/${generate()}.svg?w=600&h=600&top[]=shortHair&facialHairChance=70&clothes[]=shirt&clothes[]=hoodie&mouth[]=smile&mouth[]=twinkle&eyes[]=happy&eyes[]=wink&eyes[]=hearts&eyebrow[]=raised&eyebrow[]=up`}
+          content="https://al3des.dev/avatar.png"
         />
         <meta property="og:image:with" content="600" />
         <meta property="og:image:height" content="600" />
